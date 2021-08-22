@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" href="{{asset('css/index.css')}}">
+<link rel="stylesheet" href="{{secure_asset('css/index.css')}}">
 <div class="">
     <div class="row">
         <div class="col-md-6">
