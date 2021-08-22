@@ -1,0 +1,33 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    background-color: rgb(24, 102, 5);
+    color: rgb(78, 7, 145);
+    padding: 15px;
+    width: 100%;
+}
+.title h1{
+    margin: 0;
+    text-shadow: 1px 1px 1px #fff;
+}
+.subtitle{
+    margin-top: 10px;
+    padding: 4px 15px;
+    font-size: 1.4rem;
+    color: blueviolet;
+
+}
+.players{
+    padding: 15px;
+}
+.players ul{
+    list-style-type: square;
+}
+.subheader{
+    font-size: 1.2em;
+    display: inline-block;
+}
