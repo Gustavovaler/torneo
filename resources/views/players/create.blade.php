@@ -14,6 +14,13 @@
                 <input type="submit" class="btn btn-success btn-block">
             </form>
         </div>
+        <div class="col-md-6">
+            <ul>
+                @foreach ($players as $player)
+                    <li>{{$player->nombre}}</li>
+                @endforeach
+            </ul>
+        </div>
     </div>
 </div>
 

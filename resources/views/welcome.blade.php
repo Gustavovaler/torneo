@@ -6,33 +6,57 @@
     <div class="row">
         <div class="col-md-6">
             <div class="title">
-                 <h1 >Breakpoint Tennis</h1>
+                 <h3 >Breakpoint Tennis</h3>
+                 <p>Torneo 08 Nov 2021 <br> Individual Masculino</p>
             </div>
-            <div class="subtitle">
-                Torneo 22/08/2021
-            </div>
-            <div class="players">
-                <span class="subheader">Paricipantes:</span>
-                <ul>
-                    @foreach ($jugadores as $jugador)
-                        <li>{{$jugador->nombre}}</li>
-                    @endforeach
 
-                </ul>
-            </div>
-        </div>
         <hr>
+        <div class="actions">
+
+        </div>
         <div class="col-md-6">
             <div class="resultados">
-                <h4 class="ml-3">Resultados</h4>
+                {{-- <h4 class="ml-3">Resultados</h4> --}}
+                <hr>
+                <h5>Grupo:    A</h5>
                 @foreach ($partidos as $partido)
-                <div class="card">
-                    <div class="card-body">
-                         {{$partido->name_1()}}  vs. {{$partido->name_2()}} --  <strong>{{$partido->resultado_jug_1}} / {{$partido->resultado_jug_2}}</strong>
+                    <div class="table-wrap">
+                        <table>
+                            <tr>
+                                <td class="player-name">Jugador 1</td>
+                                <td class="float-right">6</td>
+                            </tr>
+                            <tr>
+                                <td class="player-name">Jugador 2</td>
+                                <td class="float-right">3</td>
+                            </tr>
+
+                        </table>
+                         {{-- {{$partido->name_1()}}  vs. {{$partido->name_2()}} --  <strong>{{$partido->resultado_jug_1}} / {{$partido->resultado_jug_2}}</strong> --}}
+
+
                     </div>
-                </div>
+
+                @endforeach
+                <br>
+                <h5>Grupo:    B</h5>
+                @foreach ($partidos as $partido)
+                    <div class="table-wrap">
+                        <table>
+                            <tr>
+                                <td class="player-name">Jugador 1</td>
+                                <td class="float-right">6</td>
+                            </tr>
+                            <tr>
+                                <td class="player-name">Jugador 2</td>
+                                <td class="float-right">3</td>
+                            </tr>
+
+                        </table>
+                         {{-- {{$partido->name_1()}}  vs. {{$partido->name_2()}} --  <strong>{{$partido->resultado_jug_1}} / {{$partido->resultado_jug_2}}</strong> --}}
 
 
+                    </div>
 
                 @endforeach
             </div>

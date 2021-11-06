@@ -5,8 +5,8 @@ body{
     box-sizing: border-box;
 }
 .title{
-    background-color: rgb(24, 102, 5);
-    color: rgb(78, 7, 145);
+    background-color: #0274b2;
+    color: #fff;
     padding: 15px;
     width: 100%;
 }
@@ -14,13 +14,7 @@ body{
     margin: 0;
     text-shadow: 1px 1px 1px #fff;
 }
-.subtitle{
-    margin-top: 10px;
-    padding: 4px 15px;
-    font-size: 1.4rem;
-    color: blueviolet;
 
-}
 .players{
     padding: 15px;
 }
@@ -30,4 +24,21 @@ body{
 .subheader{
     font-size: 1.2em;
     display: inline-block;
+}
+.float-right{
+    float: right;
+    width: 20%;
+}
+.player-name{
+    width: 80%;
+}
+.table-wrap{
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    margin-bottom: 3px;
+}
+table{
+    width: 100%;
 }

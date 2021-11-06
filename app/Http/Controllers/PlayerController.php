@@ -24,8 +24,9 @@ class PlayerController extends Controller
      */
     public function create()
     {
+        $players = Players::all();
 
-       return view('players.create');
+       return view('players.create', compact('players'));
     }
 
     /**
